@@ -1,0 +1,126 @@
+.login{
+    width: 100%;
+    height: 100%;
+
+    .vfx{
+        background-image: url('../../assets/images/login-1.jpg');
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .container{
+        width: 777px;
+        top: 20%;
+        left: 9%;
+        height: 342px;
+        position: absolute;
+
+        .login-title {
+            font-family: 'Audiowide';
+            text-align: center;
+            color: #156c88;
+            -webkit-transition: all 1.5s ease;
+                    transition: all 1.5s ease;
+            z-index: 11;
+            position: absolute;
+            margin: 85px;
+    
+            .test{
+                -moz-user-select: none; /*火狐*/
+                -webkit-user-select: none; /*webkit浏览器*/
+                -ms-user-select: none; /*IE10*/
+                -khtml-user-select: none; /*早期浏览器*/
+                -o-user-select: none; /* Opera*/
+                user-select: none;
+            }
+            .title-above{
+                font-size: 74px;
+            }
+    
+            .title-below{
+                font-size: 22px;
+            }
+    
+        }
+        .login-title:hover {
+            color: #000000;
+            -webkit-animation: Glow 1.5s ease infinite alternate;
+                    animation: Glow 1.5s ease infinite alternate;
+            cursor: pointer;    
+        }
+    }
+
+
+    &-con{
+        position: absolute;
+        right: 12%;
+        top: 50%;
+        transform: translateY(-60%);
+        width: 300px;
+        z-index: 11;
+        &-header{
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .form-con{
+            padding: 10px 0 0;
+        }
+        .login-tip{
+            font-size: 10px;
+            text-align: center;
+            color: #c3c3c3;
+        }
+    }
+}
+
+@-webkit-keyframes Glow {
+    from {
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 30px #fff,
+                     0 0 40px #213e92,
+                     0 0 70px #213e92,
+                     0 0 80px #213e92,
+                     0 0 100px #213e92,
+                     0 0 150px #213e92;
+    }
+    to {
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 15px #fff,
+                     0 0 20px #213e92,
+                     0 0 35px #213e92,
+                     0 0 40px #213e92,
+                     0 0 50px #213e92,
+                     0 0 75px #213e92;
+    }
+}
+
+@keyframes Glow {
+    from {
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 30px #fff,
+                     0 0 40px #213e92,
+                     0 0 70px #213e92,
+                     0 0 80px #213e92,
+                     0 0 100px #213e92,
+                     0 0 150px #213e92;
+    }
+    to {
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 15px #fff,
+                     0 0 20px #213e92,
+                     0 0 35px #213e92,
+                     0 0 40px #213e92,
+                     0 0 50px #213e92,
+                     0 0 75px #213e92;
+    }
+}
