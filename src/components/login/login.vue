@@ -33,24 +33,43 @@
     </div>
 
     <div class="login-con">
-      <!-- <Card icon="log-in" title="欢迎登录" :bordered="false">
+      <Card icon="log-in" title="欢迎登录" :bordered="false">
         <div class="form-con">
           <login-form @on-success-valid="handleSubmit"></login-form>
+          <!-- <Form ref="loginForm" autocomplete="on" :model="loginForm" :rules="loginRules" class="card-box login-form">
+                <Form-item prop="email">
+                  <Input type="text" v-model="loginForm.email" placeholder="Username" autocomplete="on">
+                       <Icon type="ios-person-outline" slot="prepend"></Icon>
+                  </Input>
+                </Form-item>
+                <Form-item prop="password">
+                    <Input type="text" v-model="loginForm.password" placeholder="Password" @keyup.enter.native="handleLogin">
+                    <Icon type="ios-person-outline" slot="prepend"></Icon>
+                    </Input>
+                </Form-item>
+                <FormItem>
+                    <Button @click="handleLogin('loginForm')" type="primary" long>登录</Button>
+                </FormItem>
+            </Form> -->
           <p class="login-tip">输入用户名密码进行登录</p>
         </div>
-      </Card> -->
-        
-
+      </Card>
     </div>
    </div>
 </template>
 
 <script>
+
 import LoginForm from '../login/login-form'
 import { mapActions } from 'vuex'
 export default{
     components: {
         LoginForm
+    },
+    data(){
+        return{
+            
+        }
     },
     methods: {
     ...mapActions([
@@ -71,6 +90,9 @@ export default{
           })
         }
       })
+    },
+    handleLogin(){
+
     }
   }
 

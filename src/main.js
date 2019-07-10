@@ -5,7 +5,8 @@ import App from './App'
 import router from './router'
 import Vuex from 'vuex'
 import $ from 'jquery'
-import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
 import VueParticles from 'vue-particles' 
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
