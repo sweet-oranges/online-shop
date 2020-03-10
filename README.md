@@ -1,6 +1,6 @@
 # own-oa
 
-> my own oa system
+> online shop
 
 ## Build Setup
 
